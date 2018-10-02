@@ -88,7 +88,7 @@ def main():
     
     ext =  os.path.splitext(os.path.basename(inputTTF))[1]
 
-    if( ext != ".ttf" or ext != ".TTF" ):
+    if( str(ext).lower() != '.ttf'  ) :
         print("\nNot supported file format\n")
         return
     
